@@ -15,5 +15,13 @@ public class CriaConta {
 		
 		System.out.println(primeiraConta.agencia);
 		System.out.println(primeiraConta.titular);
+		
+		if(primeiraConta == segundaConta) {
+			System.out.println("Mema coisa");
+		}else {
+			System.out.println("Desmema coisa");
+		}
+		System.out.println(primeiraConta);
+		System.out.println(segundaConta);
 	}
 }
