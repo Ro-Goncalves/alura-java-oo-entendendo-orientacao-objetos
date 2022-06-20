@@ -8,9 +8,12 @@ public class TestaContaSemCliente {
 		
 		//contaDaMarcela.titular.nome = "Marcela Da Silva";
 		//System.out.println(contaDaMarcela.titular.nome);
-		contaDaMarcela.titular = new Cliente();
-		contaDaMarcela.titular.nome = "Marcela Da Silva";
-		System.out.println(contaDaMarcela.titular.nome);
+		//contaDaMarcela.titular = new Cliente();
+		contaDaMarcela.setTitular(new Cliente());
+		//contaDaMarcela.titular.nome = "Marcela Da Silva";
+		contaDaMarcela.getTitular().setNome("Marcela Da Silva");
+		//System.out.println(contaDaMarcela.titular.nome);
+		System.out.println(contaDaMarcela.getTitular().getNome());
 	}
 
 }

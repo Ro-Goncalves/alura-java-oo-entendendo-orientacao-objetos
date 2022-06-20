@@ -20,7 +20,8 @@ public class CriaConta {
 		//System.out.println(primeiraConta.agencia);
 		//System.out.println(primeiraConta.titular);
 		System.out.println(primeiraConta.getAgencia());
-		System.out.println(primeiraConta.titular);
+		//System.out.println(primeiraConta.titular);
+		System.out.println(primeiraConta.getTitular());
 		
 		if(primeiraConta == segundaConta) {
 			System.out.println("Mema coisa");
