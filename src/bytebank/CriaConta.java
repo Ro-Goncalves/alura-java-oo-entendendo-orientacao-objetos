@@ -3,15 +3,15 @@ package bytebank;
 public class CriaConta {
 	public static void main(String[] args) {
 		Conta primeiraConta = new Conta();		
-		primeiraConta.saldo = 200;
-		System.out.println(primeiraConta.saldo);
+		primeiraConta.deposita(200);
+		System.out.println(primeiraConta.pegaSaldo());
 		
-		primeiraConta.saldo += 100;		
-		System.out.println("Primeira conta tem: " + primeiraConta.saldo);
+		primeiraConta.deposita(100);		
+		System.out.println("Primeira conta tem: " + primeiraConta.pegaSaldo());
 		
 		Conta segundaConta = new Conta();
-		segundaConta.saldo = 50;
-		System.out.println("Segunda conta tem: " + segundaConta.saldo);
+		segundaConta.deposita(50);
+		System.out.println("Segunda conta tem: " + segundaConta.pegaSaldo());
 		
 		System.out.println(primeiraConta.agencia);
 		System.out.println(primeiraConta.titular);

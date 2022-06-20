@@ -3,16 +3,16 @@ package bytebank;
 public class TesteDeReferencia {
 	 public static void main(String[] args) {
 		 Conta primeiraConta = new Conta();
-		 primeiraConta.saldo = 300;
+		 primeiraConta.deposita(300);
 		 
-		 System.out.println("Saldo primeira conta: " + primeiraConta.saldo);
+		 System.out.println("Saldo primeira conta: " + primeiraConta.pegaSaldo());
 		 
 		 Conta segundaConta = primeiraConta;
-		 System.out.println("Saldo segunda conta: " + segundaConta.saldo);
+		 System.out.println("Saldo segunda conta: " + segundaConta.pegaSaldo());
 		 
-		 segundaConta.saldo += 100;
-		 System.out.println("Novo saldo segunda conta: " + segundaConta.saldo);
-		 System.out.println("Primeira conta: " + primeiraConta.saldo);
+		 segundaConta.deposita(100);
+		 System.out.println("Novo saldo segunda conta: " + segundaConta.pegaSaldo());
+		 System.out.println("Primeira conta: " + primeiraConta.pegaSaldo());
 		 
 		 if(primeiraConta == segundaConta) {
 			 System.out.println("são a mema coisa");
