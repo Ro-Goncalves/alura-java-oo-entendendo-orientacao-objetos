@@ -8,6 +8,8 @@ public class TestaBanco {
 		paulo.profissao = "Programador";
 
 		Conta contaDoPaulo = new Conta();
+		
+		//contaDoPaulo.saldo += 100
 		contaDoPaulo.deposita(100);
 
 		contaDoPaulo.titular = paulo;
